@@ -1,0 +1,412 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+body {
+  background:red;
+}
+
+
+
+/*
+* profile
+*/
+
+.profile{
+  width: 380px;
+  box-shadow: 0 2px 20px 1px rgba(0, 0, 0, .14), 0 1px 20px 0 rgba(0, 0, 0, .12), 0 3px 10px -2px rgba(0, 0, 0, .2);
+  padding: 8rem 0 0;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  height:480px;
+  
+}
+
+.profile:before{
+  content: "";
+  width: 85px;
+  height: 60px;
+  
+  transition: transform .5s cubic-bezier(0.42, 0.04, 0.13, 0.92);
+  border-radius: 50%;
+  background-color: #7B1FA2;
+
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%) scale(7);
+}
+
+.profile:hover:before{
+  transition: transform .7s cubic-bezier(0.66, 0.09, 0, 1.31);
+}
+
+.profile:hover:before{
+    transform: translateX(-50%) translateY(200%) scale(25);
+}
+
+.profile:hover, .profile:hover .profile__value{
+  color: #fff;
+}
+
+.profile:hover .profile__group, .profile:hover .profile__avatar, .profile:hover .profile__social{
+  border-color: #fff;
+}
+
+.profile:hover .profile__row{
+  background-color: #690394;  
+}
+
+.profile__header{
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  height:auto;
+}
+
+.profile__avatar{
+  border-radius: 50%;
+  width: 14rem;
+  height: 14rem;
+  border: 6px solid #7B1FA2;
+  transition: border-color .4s ease-out .1s;
+}
+
+.profile:hover .profile__avatar{
+  transition: border-color .4s ease-out .2s;
+}
+  
+.profile__name{
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 18px;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__post{
+  display: block;
+  font-size: 18px;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__body{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.profile__row{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;  
+  
+  background-color: #f0f0f0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  
+  position: relative;
+  z-index: 2;
+  transition: background-color .4s ease-out .1s;
+}
+
+.profile:hover .profile__row{
+  transition: background-color .4s ease-out .2s;
+}
+
+.profile__group{
+  box-sizing: border-box;
+  width: 33.3333333%;
+
+  transition: border-color .4s ease-out .1s;
+  
+  border-right: 1px solid #BDBDBD;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  margin-top:10px;
+}
+
+profile:hover .profile__group{
+  transition: border-color .4s ease-out .4s;
+}
+
+.profile__group:nth-child(1), .profile__group:nth-child(2),
+.profile__group:nth-child(3){
+  margin-top: 0;
+}
+
+.profile__group:nth-child(3n+3){
+  border-right: none;
+}
+
+.profile__param, .profile__value{
+  display: block;
+  transition: color .4s ease-out .1s;
+}
+
+.profile__param{
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.profile__value{
+  font-size: 13px;
+  color: #7B1FA2;
+  font-weight: 700;
+}
+
+.profile__footer{
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0px;
+}
+
+.cssui-icon{
+  width: var(--cssuiIconSize, 2em);
+  height: var(--cssuiIconSize, 2em);
+  display: inline-block;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.profile__social{
+  border: 2px solid #7B1FA2;
+  border-radius: 50%;
+
+  margin-left: .8rem;
+  margin-right: .8rem;  
+  padding: 1rem;
+  font-size: .8rem;  
+  
+  position: relative;
+  z-index: 2;
+}
+
+.profile__social:hover{
+  background-color: #7B1FA2;
+}
+
+.cssui-social{
+  display: inline-flex;
+  position: relative;
+}
+
+.cssui-social__name{
+  position: absolute;
+  left: -9999px;
+}
+
+.profile__twitter{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/twitter_purple.svg");
+}
+
+.profile__linkedin{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/linkedin_purple.svg");
+}
+
+.profile__codepen{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/codepen_purple.svg");
+}
+
+.profile:hover  .profile__twitter{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/twitter.svg");
+}
+
+.profile:hover  .profile__linkedin{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/linkedin.svg");
+}
+
+.profile:hover  .profile__codepen{
+  background-image: url("https://stas-melnikov.ru/codepen/icons/codepen.svg");
+}
+
+/*
+* demo styles
+*/
+
+@media screen and (min-width: 769px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px){
+
+  html{
+    font-size: 56%;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  background-image: linear-gradient(29deg, #512DA8 50%, #673AB7 50%);
+}
+
+a{
+  color: #fff;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+}
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.demo{
+  flex-grow: 2;
+}
+
+.main-container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #929292;
+  padding:30px;
+}
+
+.footer{
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 641px){
+
+  .footer__container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .melnik909{
+    margin-left: 2rem;
+  }  
+}
+
+@media screen and (max-width: 640px){
+
+  .melnik909{
+    display: none;
+  } 
+}
