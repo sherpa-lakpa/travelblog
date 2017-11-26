@@ -13,7 +13,7 @@ This is normal paragraph.
 * points
 
 http://slakpa.com.np
-[http://slakpa.com.np](My website)
+[My site](http://slakpa.com.np)
 
 # travelblog
 
